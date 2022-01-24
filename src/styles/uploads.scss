@@ -1,0 +1,35 @@
+@import 'variables.scss';
+#uploads {
+    .float-left {
+        float: left;
+        width: 20%;
+        min-width: 131px;
+        margin-top: 25px;
+        div {
+            width: 130px;
+            height: 145px;
+            padding: 4px;
+            &:hover {
+                background-color: $main-border-color;
+                border: 1px solid #f1f1f1;
+                border-radius: 2px;
+                img {
+                    filter: brightness(0.30);
+                }
+            }
+            img {
+                width: 120px;
+                height: 100px;
+                object-fit: cover;
+            }
+            h1 {
+                color: $black-text-color;
+                line-height: 16px;
+            }
+            p {
+                line-height: 16px;
+                color: $nav-text-color;
+            }
+        }
+    }
+}

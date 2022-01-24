@@ -1,0 +1,37 @@
+@import 'variables.scss';
+.photos {
+    height: 80px;
+    width: 100%;
+    border-bottom: 2px solid $main-border-color;
+    h1 {
+        font-size: 14px;
+        line-height: 42px;
+        color: $black-text-color;
+    }
+    div {
+        div {
+            width: 90px;
+            height: 30px;
+            img {
+                margin: auto;
+            }
+        }
+        ul {
+            li {
+                display: inline;
+                margin-left: 10px;
+                padding: 3px 6px;
+                &:hover {
+                    background-color: $black-text-color;
+                    border-radius: 3px;
+                }
+                &:hover a {
+                    color: $white-color
+                }
+                a {
+                    color: $black-text-color;
+                }
+            }
+        }
+    }
+}

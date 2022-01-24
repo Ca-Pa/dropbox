@@ -1,0 +1,106 @@
+@import 'variables.scss';
+#sidenav {
+    .logo {
+        height: 50px;
+        width: 100%;
+        img {
+            display: block;
+            margin: auto;
+            padding-top: 9px;
+        }
+    }
+    .navigation {
+        min-height: 50%;
+        ul {
+            li {
+                a {
+                    color: $nav-text-color;
+                    line-height: 33px;
+                    transition: 200ms;
+                    &:hover {
+                        color: $white-color
+                    }
+                }
+                div {
+                    height: 33px;
+                    width: 33px;
+                    float: left;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    img {
+                        position: absolute;
+                    }
+                }
+                .float-right {
+                    float: right;
+                    height: 33px;
+                    width: 25px;
+                    padding-right: 2px;
+                    div {
+                        width: 15px;
+                        height: 14px;
+                        border: 1px solid $nav-text-color;
+                        border-radius: 3px;
+                        a {
+                            color: #00b5f9;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .spaceleft {
+        width: 108px;
+        margin: auto;
+        margin-top: 20px;
+        h1 {
+            font-weight: bold;
+            color: $white-color;
+            line-height: 33px;
+        }
+        .add-space {
+            width: 13px;
+            height: 13px;
+            border: 1px solid $nav-text-color;
+            border-radius: 50%;
+            text-align: center;
+            a {
+                color: $blue-color;
+                font-size: 11px;
+            }
+        }
+        .space {
+            width: 108px;
+            height: 2px;
+            background-color: #363e54;
+            margin-bottom: 40px;
+            .loaded {
+                width: 50%;
+                height: 2px;
+                background-color: $blue-color
+            }
+        }
+    }
+    .upgrade {
+        width: 120px;
+        height: 25px;
+        border: 1px solid $blue-color;
+        border-radius: 3px;
+        margin: auto;
+        div {
+            padding-top: 7px;
+            padding-left: 25px;
+            a {
+                color: $white-color;
+            }
+        }
+        img {
+            display: block;
+            float: left;
+            padding: 5px;
+            padding-left: 7px;
+        }
+    }
+}
